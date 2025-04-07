@@ -3,11 +3,10 @@ from tkinter import filedialog, messagebox
 import threading
 import os
 import yt_dlp
-
+import imageio_ffmpeg
 
 def get_ffmpeg_path():
-    """Returns the path to local FFmpeg."""
-    return os.path.join(os.getcwd(), "ffmpeg", "bin")
+    return imageio_ffmpeg.get_ffmpeg_exe()
 
 
 def choose_path():
